@@ -24,6 +24,26 @@ APRS mesajlarını, depremleri ve hava durumunu tek ekranda sunar.
 - **AselGate bağlantısı:** AselGate'in IP adresini girme, otomatik bulma ve AselGate'in kendi
   Wi-Fi ağına doğrudan bağlanma. Tablet IP'si de burada gösterilir.
 
+## Ekran görüntüleri
+
+**Pusula:** Duyulan istasyonlar yön ve mesafeye göre gösterilir. Üstteki çubukta AselGate
+durumu, uydu sayısı, pil ve ses düğmeleri, ortada son duyulan istasyon ve hava durumu yer alır.
+
+![Pusula ekranı](ekran-goruntuleri/pusula.png)
+
+**İstasyon listesi:** Duyulan çağrı işaretleri, mesafe, yön, kaç kez duyulduğu ve hangi digipeater
+üzerinden geldiği (son yol sütunu). Örneğin YM2KDZ bu ekranda digipeater olarak görünür.
+
+![İstasyon listesi](ekran-goruntuleri/liste.png)
+
+**Depremler:** Kandilli ve YM2UDM RF relay'inden gelen son depremler, büyüklük, derinlik ve uzaklık.
+Yeni deprem geldiğinde "YENİ" etiketi çıkar.
+
+![Depremler ekranı](ekran-goruntuleri/deprem.png)
+
+> Ekran görüntüleri 800x480 dokunmatik tabletten alınmıştır. Mesaj ekranı, içinde başkalarının
+> özel mesajları olduğu için buraya eklenmemiştir.
+
 ## Gereksinimler
 
 - **AselGate donanımı:** ESP32 tabanlı AselGate iGate ve firmware (bu depodaki
