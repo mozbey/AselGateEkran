@@ -44,6 +44,30 @@ Yeni deprem geldiğinde "YENİ" etiketi çıkar.
 > Ekran görüntüleri 800x480 dokunmatik tabletten alınmıştır. Mesaj ekranı, içinde başkalarının
 > özel mesajları olduğu için buraya eklenmemiştir.
 
+### iGate web arayüzü
+
+ESP32 iGate'in kendi web arayüzü (`http://AselGate.local` ya da cihazın IP adresi). Durum, canlı
+paket akışı, duyulan istasyonlar ve 24 saatlik istatistik burada görünür.
+
+**Durum:** APRS-IS bağlantısı, sunucu, telsizden alınan ve APRS-IS'e iletilen paket sayıları.
+
+![iGate durum](ekran-goruntuleri/web/durum.png)
+
+**Canlı paket akışı:** Telsizden gelen paketler, iGate'in APRS-IS'e gönderdikleri ve atladıkları.
+
+![Canlı paket akışı](ekran-goruntuleri/web/canli-paket.png)
+
+**Duyulan istasyonlar:** Çağrı işareti, son duyulma, paket sayısı, mesafe ve yön.
+
+![Duyulan istasyonlar](ekran-goruntuleri/web/duyulan-istasyonlar.png)
+
+**Saatlik istatistik:** Son 24 saatte alınan, iletilen ve atlanan paketler.
+
+![Saatlik istatistik](ekran-goruntuleri/web/saatlik-istatistik.png)
+
+> Ayarlar ve Wi-Fi bölümleri, şifre ve konum bilgisi içerdiği için buraya eklenmemiştir. Durum
+> ekranındaki Wi-Fi adı ve kayıtlı konum karartılmıştır.
+
 ## ESP32 iGate yazılımı (AselGate firmware)
 
 TA7W öncülüğünden Aselsan 4000 serisi telsizlere yapılan yeni yazılım güncellemesinin ardından
