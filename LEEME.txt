@@ -1,0 +1,23 @@
+﻿AselGate Ekran - Linux kurulum paketi
+====================================
+
+Bu paket derlenmis bir programdir (Python gerekmez). Gereksinim: 32 bit ve 64 bit
+Linux'ta calisir, ancak 64 bit sistemlerde 32 bit kutuphaneler gerekebilir.
+Acilmazsa: sudo apt install libc6-i386   (Debian/Ubuntu/antiX)
+
+Kurulum:
+    sh install.sh                 (yalnizca masaustu/menu girdisi)
+    sh install.sh --autostart     (ayrica oturum acilisinda otomatik baslat)
+
+Calistirma:
+    aselgate-ekran                (ya da uygulama menusu: "AselGate Ekran")
+
+Kaldirma:
+    sh uninstall.sh
+
+Notlar:
+- Uygulama bir AselGate iGate cihazinin web arayuzunden veri okur. Ilk acilista
+  AselGate'in IP adresini (ornegin 192.168.1.50) veya ag adini girin.
+- Dokunmatik ekran, GPS ve xrandr ile ilgili ozellikler Linux'a ozgudur; bunlar
+  yoksa uygulama yine calisir, yalnizca o ozellikler devre disi kalir.
+- Ayarlar ~/.config/aselgate-ekran.json dosyasindadir.
